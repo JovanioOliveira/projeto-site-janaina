@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        
+        <!--Estilo Personalizado-->
+        <link rel="stylesheet" href="../assets/css/style.css">
+
+    </head>
+
+    <body>
+    
+        <header class="site-header">
+            <nav class="nav-bar"> 
+                <div class="logo">Janaina Aquino</div>
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Sobre">Sobre</a></li>
+                    <li><a href="../index.html#galeria">Galeria</a></li>
+                    <!-- <li><a href="#Galeria">Galeria</a></li> -->
+                    <li><a href="../index.html#Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="Contato" class="container__contato">
+            <div class="container__contato--img">
+                <img src="../assets/images/original/Image_02.jpg" alt="Imagem_Janaina">
+            </div>
+
+            <!--Perguntar sobre enviar.php, adaptar para enviar email sem servidor-->
+
+            <form action="." method="POST" class="container__contato--form"> 
+                <div class="container__contato--form-conteudo">
+                    <h5 id="titulo-contato" class="container__contato--form-conteudo-titulo">
+                        Entre em Contato
+                    </h5>
+                </div>
+
+                <div class="container__contato-inputs">
+                    <label for=" nome">Nome</label>
+                    <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
+                    
+                    <label for="email">Email</label>
+                    <input type="email" placeholder="Digite seu e-mail" id="email" name="email" required>
+                    
+                    <label for="assunto">Assunto</label>
+                    <input type="text" placeholder="Assunto" id="assunto" name="assunto" required>
+                    
+                    <label for="mensagem">Mensagem</label>
+                    <textarea placeholder="Escreva sua mensagem" maxlength="500" id="mensagem"
+                        name="mensagem"></textarea> 
+                </div>
+
+                <button type="submit">Enviar</button>
+                                
+            </form>           
+            
+        </section>
+
+    <!-- Script personalizado -->
+    
+    <script src="../assets/js/swiper-init.js"></script>
+    
+    </body>
+
+</html>
